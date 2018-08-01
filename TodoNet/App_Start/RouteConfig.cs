@@ -12,7 +12,7 @@ namespace TodoNet
             routes.MapRoute(
                 "Default",
                 "{controller}/{action}/{id}",
-                new {controller = "Home", action = "Index", id = UrlParameter.Optional}
+                new {controller = "Todo", action = "Index", id = UrlParameter.Optional}
             );
         }
     }
