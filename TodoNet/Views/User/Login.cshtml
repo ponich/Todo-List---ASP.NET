@@ -1,0 +1,30 @@
+﻿@model TodoNet.Models.Login
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<div class="row">
+    <div class="col-md-12">
+
+        @using (Html.BeginForm("Login", "User", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="Email" class="form-control" value="@Request.Params["Email"]">
+                @Html.ValidationMessageFor(model => model.Email, "", new {@class = "text-danger"})
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="Password" class="form-control">
+                @Html.ValidationMessageFor(model => model.Password, "", new {@class = "text-danger"})
+            </div>
+
+            <button typle="submit" class="btn btn-default">Auth</button>
+        }
+
+    </div>
+</div>

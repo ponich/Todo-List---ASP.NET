@@ -115,6 +115,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\TodoController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs" />
     <Compile Include="Models\Context.cs" />
     <Compile Include="Models\Todo.cs" />
@@ -135,6 +136,9 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Todo\Form.cshtml" />
     <Content Include="Views\Todo\Index.cshtml" />
+    <Content Include="Views\User\Login.cshtml" />
+    <Content Include="Views\User\Profile.cshtml" />
+    <Content Include="Views\User\Register.cshtml" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Web.config" />

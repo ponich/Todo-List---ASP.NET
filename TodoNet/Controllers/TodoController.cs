@@ -23,6 +23,7 @@ namespace TodoNet.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         // get form
         public ActionResult Form()
         {
@@ -30,6 +31,7 @@ namespace TodoNet.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         // form handler
         public ActionResult Create(Todo todo)
         {

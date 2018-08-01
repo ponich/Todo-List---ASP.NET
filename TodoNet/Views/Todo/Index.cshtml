@@ -4,6 +4,10 @@
 
 <div class="row">
 
+    <div class="col-md-12">
+        @Html.ActionLink("Create new todo item", "Form", "Todo", null, new {@class = "btn btn-primary"})
+    </div>
+
     @foreach (var todo in ViewBag.Todos)
     {
         <div class="col-md-4">
